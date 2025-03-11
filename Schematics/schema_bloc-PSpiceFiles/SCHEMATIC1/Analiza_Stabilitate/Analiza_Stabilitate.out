@@ -1,0 +1,821 @@
+
+**** 11/20/24 23:11:45 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Analiza_Stabilitate"  [ C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\P1_2024_431D_Ciuhureanu_Andrei_A
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Analiza_Stabilitate.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/bc807-25.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/bc817-25.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/bc846b.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/bc856b.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/bzx84c2v7.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/bzx84c5v1.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/bzx84c5v6.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/bzx84c6v2.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/bzx84c6v8.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/bzx84c8v2.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/bzx84c10.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/irfr120npbf.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/mjd31cg.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/mjd32cg.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/mmbfj177lt1g.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/mmbfj309lt1g.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/1n4148.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Andrei Ciuhureanu\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.AC DEC 10 10 100MEG
+.TEMP -20 0 27 40 70 120
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source SCHEMA_BLOC
+R_R1         0 VIN  220k TC=0,0 
+Q_Q1         N00223 VIN N00500 QBC846B 
+Q_Q3         N00223 N00316 N15428 QBC856B 
+Q_Q4         N00316 N00316 N15404 QBC856B 
+R_R2         N15428 VDD  220 TC=0,0 
+R_R3         N15404 VDD  220 TC=0,0 
+Q_Q2         N00316 N02160 N00500 QBC846B 
+Q_Q5         N00500 N01385 N00580 QBC846B 
+R_R4         VSS N00580  470 TC=0,0 
+R_R5         N01385 0  2.2k TC=0,0 
+Q_Q7         N01272 N00223 N11121 QBC856B 
+C_C1         N00223 N01272  470p  TC=0,0 
+R_R6         VSS N01577  330 TC=0,0 
+Q_Q6         N14490 N01385 N01577 QBC846B 
+R_R8         N02254 VOUT  8.2k TC=0,0 
+R_R9         0 N02254  910 TC=0,0 
+R_R10         N023821 VOUT  22 TC=0,0 
+R_R11         N054491 N023821  22 TC=0,0 
+X_U2         N07242 VSS 1N4148 
+X_U1         N01385 N07242 1N4148 
+R_R7         N11121 VDD  330 TC=0,0 
+C_C2         N11121 VDD  1u  TC=0,0 
+X_U3         N01272 N16020 1N4148 
+X_U4         N16020 N14490 1N4148 
+V_Vdd         VDD 0 8Vdc
+V_Vss         0 VSS 8Vdc
+R_R12         N356941 N054491  22 TC=0,0 
+R_R13         0 N356941  22 TC=0,0 
+Q_Q8         VDD N01272 VOUT QBC846B 
+Q_Q9         VSS N14490 VOUT QBC856B 
+R_R14         N546641 VDD  150 TC=0,0 
+X_D1         N55684 0 LED PARAMS: IS=1.7603e-027 RS=3  BV=5 IBV=5e-6         
+R_R15         VSS N552660  150 TC=0,0 
+X_D2         0 N56498 LED PARAMS: IS=1.7603e-027 RS=3  BV=5 IBV=5e-6         
+R_R16         N55684 N546641  82 TC=0,0 
+R_R17         N552660 N56498  82 TC=0,0 
+V_V1         N640660 0  AC 540m
++SIN 0 540m 1k 0 0 0
+C_C3         N640660 N02160  1G  TC=0,0 
+C_C4         0 VIN  1000u  TC=0,0 
+L_L1         N02160 N02254  1GH  
+
+**** RESUMING Analiza_Stabilitate.cir ****
+.END
+
+**** 11/20/24 23:11:45 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Analiza_Stabilitate"  [ C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\P1_2024_431D_Ciuhureanu_Andrei_A
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2.1N4148     X_U1.1N4148     X_U3.1N4148     X_U4.1N4148     
+          IS    4.352000E-09    4.352000E-09    4.352000E-09    4.352000E-09 
+           N    1.906           1.906           1.906           1.906        
+          BV  110             110             110             110            
+         IBV  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+          RS     .6458           .6458           .6458           .6458       
+          TT    3.480000E-09    3.480000E-09    3.480000E-09    3.480000E-09 
+         CJO  704.800000E-15  704.800000E-15  704.800000E-15  704.800000E-15 
+          VJ     .869            .869            .869            .869        
+           M     .03             .03             .03             .03         
+
+
+               X_D1.model201   X_D2.model201   
+          IS    1.760300E-27    1.760300E-27 
+           N    2               2            
+          BV    5               5            
+         IBV    5.000000E-06    5.000000E-06 
+          RS    3               3            
+
+
+**** 11/20/24 23:11:45 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Analiza_Stabilitate"  [ C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\P1_2024_431D_Ciuhureanu_Andrei_A
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               QBC846B         QBC856B         
+               NPN             PNP             
+       LEVEL    1               1            
+          IS   18.220000E-15   20.140000E-15 
+          BF  324.4           315.3          
+          NF     .9932           .9974       
+         VAF   82              39.15         
+         IKF     .109            .079        
+         ISE  289.400000E-18    6.578000E-15 
+          NE    1.4             1.45         
+          BR    8.29            8.68         
+          NR     .9931           .9952       
+         VAR   17.9             9.5          
+         IKR     .09             .09         
+         ISC    9.982000E-12   16.330000E-15 
+          NC    1.763           1.15         
+         ISS    0               0            
+          RB   10              10            
+         RBM    5               5.000000E-06 
+         IRB    5.000000E-06    5.000000E-06 
+          RE     .649            .663        
+          RC     .7014           .718        
+         CJE   12.440000E-12   11.350000E-12 
+         VJE     .7579           .7071       
+         MJE     .3656           .3808       
+         CJC    3.347000E-12    6.395000E-12 
+         VJC     .5463           .4951       
+         MJC     .391            .44         
+        XCJC     .6193           .6288       
+         CJS    0               0            
+         VJS     .75             .75         
+         MJS     .333            .333        
+          FC     .979            .9059       
+          TF  490.800000E-12  654.600000E-12 
+         XTF    9.51            5.387        
+         VTF    2.927           6.245        
+         ITF     .3131           .2108       
+          TR   90.000000E-09   55.000000E-09 
+          KF    0               0            
+          AF    1               1            
+          CN    2.42            2.2          
+           D     .87             .52         
+
+
+**** 11/20/24 23:11:45 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Analiza_Stabilitate"  [ C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\P1_2024_431D_Ciuhureanu_Andrei_A
+
+
+ ****     TEMPERATURE-ADJUSTED VALUES      TEMPERATURE =  -20.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+ **** DIODE MODEL PARAMETERS
+
+                 X_U2.1N4148    X_U1.1N4148    X_U3.1N4148  
+
+         IS        5.090E-11      5.090E-11      5.090E-11  
+         VJ        9.305E-01      9.305E-01      9.305E-01  
+        CJO        7.029E-13      7.029E-13      7.029E-13  
+         RS        6.458E-01      6.458E-01      6.458E-01  
+        IKF        0.000E+00      0.000E+00      0.000E+00  
+         BV        1.100E+02      1.100E+02      1.100E+02  
+
+                 X_U4.1N4148   X_D1.model201  X_D2.model201 
+
+         IS        5.090E-11      2.538E-29      2.538E-29  
+         VJ        9.305E-01      1.041E+00      1.041E+00  
+        CJO        7.029E-13      0.000E+00      0.000E+00  
+         RS        6.458E-01      3.000E+00      3.000E+00  
+        IKF        0.000E+00      0.000E+00      0.000E+00  
+         BV        1.100E+02      5.000E+00      5.000E+00  
+
+
+ **** BJT MODEL PARAMETERS
+
+                   QBC846B        QBC856B                   
+
+         BF        3.244E+02      3.153E+02  
+        ISE        6.781E-19      1.899E-17  
+        VJE        8.368E-01      7.940E-01  
+        CJE        1.188E-11      1.074E-11  
+         RE        6.490E-01      6.630E-01  
+         RB        1.000E+01      1.000E+01  
+         BR        8.290E+00      8.680E+00  
+        ISC        8.139E-14      1.026E-17  
+        VJC        6.584E-01      6.152E-01  
+        CJC        3.054E-12      5.660E-12  
+         RC        7.014E-01      7.180E-01  
+        RBM        5.000E+00      5.000E-06  
+         IS        3.787E-18      4.186E-18  
+        ISS        0.000E+00      0.000E+00  
+        VJS        8.302E-01      8.302E-01  
+        CJS        0.000E+00      0.000E+00  
+      GAMMA        1.000E-11      1.000E-11  
+        RCO        0.000E+00      0.000E+00  
+         VO        1.000E+01      1.000E+01  
+
+
+**** 11/20/24 23:11:45 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Analiza_Stabilitate"  [ C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\P1_2024_431D_Ciuhureanu_Andrei_A
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =  -20.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VDD)    8.0000  (  VIN)    -.5260  (  VSS)   -8.0000  ( VOUT)   -5.2472      
+
+(N00223)    6.6365 (N00316)    7.1062 (N00500)   -1.2404 (N00580)   -7.2406     
+
+(N01272)   -4.6576 (N01385)   -6.5099 (N01577)   -7.2498 (N02160)    -.5261     
+
+(N02254)    -.5261 (N07242)   -7.2549 (N11121)    7.3684 (N14490)   -6.1103     
+
+(N15404)    7.8240 (N15428)    7.8238 (N16020)   -5.3840 (N55684)    2.7747     
+
+(N56498)   -2.7747 (N023821)   -3.9354                   (N054491)   -2.6236    
+
+(N356941)   -1.3118                   (N546641)    4.6216                       
+
+(N552660)   -4.6216                   (N640660)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_Vdd       -2.604E-02
+    V_Vss       -8.921E-02
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   9.22E-01  WATTS
+
+
+**** 11/20/24 23:11:45 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Analiza_Stabilitate"  [ C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\P1_2024_431D_Ciuhureanu_Andrei_A
+
+
+ ****     TEMPERATURE-ADJUSTED VALUES      TEMPERATURE =    0.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+ **** DIODE MODEL PARAMETERS
+
+                 X_U2.1N4148    X_U1.1N4148    X_U3.1N4148  
+
+         IS        4.052E-10      4.052E-10      4.052E-10  
+         VJ        9.048E-01      9.048E-01      9.048E-01  
+        CJO        7.037E-13      7.037E-13      7.037E-13  
+         RS        6.458E-01      6.458E-01      6.458E-01  
+        IKF        0.000E+00      0.000E+00      0.000E+00  
+         BV        1.100E+02      1.100E+02      1.100E+02  
+
+                 X_U4.1N4148   X_D1.model201  X_D2.model201 
+
+         IS        4.052E-10      1.832E-28      1.832E-28  
+         VJ        9.048E-01      1.024E+00      1.024E+00  
+        CJO        7.037E-13      0.000E+00      0.000E+00  
+         RS        6.458E-01      3.000E+00      3.000E+00  
+        IKF        0.000E+00      0.000E+00      0.000E+00  
+         BV        1.100E+02      5.000E+00      5.000E+00  
+
+
+ **** BJT MODEL PARAMETERS
+
+                   QBC846B        QBC856B                   
+
+         BF        3.244E+02      3.153E+02  
+        ISE        1.142E-17      2.903E-16  
+        VJE        8.037E-01      7.574E-01  
+        CJE        1.212E-11      1.100E-11  
+         RE        6.490E-01      6.630E-01  
+         RB        1.000E+01      1.000E+01  
+         BR        8.290E+00      8.680E+00  
+        ISC        7.666E-13      3.193E-16  
+        VJC        6.111E-01      5.645E-01  
+        CJC        3.178E-12      5.970E-12  
+         RC        7.014E-01      7.180E-01  
+        RBM        5.000E+00      5.000E-06  
+         IS        1.974E-16      2.182E-16  
+        ISS        0.000E+00      0.000E+00  
+        VJS        7.965E-01      7.965E-01  
+        CJS        0.000E+00      0.000E+00  
+      GAMMA        1.000E-11      1.000E-11  
+        RCO        0.000E+00      0.000E+00  
+         VO        1.000E+01      1.000E+01  
+
+
+**** 11/20/24 23:11:45 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Analiza_Stabilitate"  [ C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\P1_2024_431D_Ciuhureanu_Andrei_A
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =    0.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VDD)    8.0000  (  VIN)    -.5027  (  VSS)   -8.0000  ( VOUT)   -5.0153      
+
+(N00223)    6.6959 (N00316)    7.1508 (N00500)   -1.1800 (N00580)   -7.2723     
+
+(N01272)   -4.4693 (N01385)   -6.5776 (N01577)   -7.2822 (N02160)    -.5028     
+
+(N02254)    -.5028 (N07242)   -7.2888 (N11121)    7.3918 (N14490)   -5.8470     
+
+(N15404)    7.8314 (N15428)    7.8311 (N16020)   -5.1582 (N55684)    2.8929     
+
+(N56498)   -2.8929 (N023821)   -3.7615                   (N054491)   -2.5077    
+
+(N356941)   -1.2538                   (N546641)    4.6980                       
+
+(N552660)   -4.6980                   (N640660)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_Vdd       -2.539E-02
+    V_Vss       -8.593E-02
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   8.91E-01  WATTS
+
+
+**** 11/20/24 23:11:45 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Analiza_Stabilitate"  [ C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\P1_2024_431D_Ciuhureanu_Andrei_A
+
+
+ ****     TEMPERATURE-ADJUSTED VALUES      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+ **** DIODE MODEL PARAMETERS
+
+                 X_U2.1N4148    X_U1.1N4148    X_U3.1N4148  
+
+         IS        4.352E-09      4.352E-09      4.352E-09  
+         VJ        8.690E-01      8.690E-01      8.690E-01  
+        CJO        7.048E-13      7.048E-13      7.048E-13  
+         RS        6.458E-01      6.458E-01      6.458E-01  
+        IKF        0.000E+00      0.000E+00      0.000E+00  
+         BV        1.100E+02      1.100E+02      1.100E+02  
+
+                 X_U4.1N4148   X_D1.model201  X_D2.model201 
+
+         IS        4.352E-09      1.760E-27      1.760E-27  
+         VJ        8.690E-01      1.000E+00      1.000E+00  
+        CJO        7.048E-13      0.000E+00      0.000E+00  
+         RS        6.458E-01      3.000E+00      3.000E+00  
+        IKF        0.000E+00      0.000E+00      0.000E+00  
+         BV        1.100E+02      5.000E+00      5.000E+00  
+
+
+ **** BJT MODEL PARAMETERS
+
+                   QBC846B        QBC856B                   
+
+         BF        3.244E+02      3.153E+02  
+        ISE        2.894E-16      6.578E-15  
+        VJE        7.579E-01      7.071E-01  
+        CJE        1.244E-11      1.135E-11  
+         RE        6.490E-01      6.630E-01  
+         RB        1.000E+01      1.000E+01  
+         BR        8.290E+00      8.680E+00  
+        ISC        9.982E-12      1.633E-14  
+        VJC        5.463E-01      4.951E-01  
+        CJC        3.347E-12      6.395E-12  
+         RC        7.014E-01      7.180E-01  
+        RBM        5.000E+00      5.000E-06  
+         IS        1.822E-14      2.014E-14  
+        ISS        0.000E+00      0.000E+00  
+        VJS        7.500E-01      7.500E-01  
+        CJS        0.000E+00      0.000E+00  
+      GAMMA        1.000E-11      1.000E-11  
+        RCO        0.000E+00      0.000E+00  
+         VO        1.000E+01      1.000E+01  
+
+
+**** 11/20/24 23:11:45 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Analiza_Stabilitate"  [ C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\P1_2024_431D_Ciuhureanu_Andrei_A
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VDD)    8.0000  (  VIN)    -.4714  (  VSS)   -8.0000  ( VOUT)   -4.7034      
+
+(N00223)    6.7778 (N00316)    7.2120 (N00500)   -1.0977 (N00580)   -7.3153     
+
+(N01272)   -4.2175 (N01385)   -6.6700 (N01577)   -7.3259 (N02160)    -.4716     
+
+(N02254)    -.4716 (N07242)   -7.3350 (N11121)    7.4241 (N14490)   -5.4915     
+
+(N15404)    7.8414 (N15428)    7.8411 (N16020)   -4.8545 (N55684)    3.0516     
+
+(N56498)   -3.0516 (N023821)   -3.5276                   (N054491)   -2.3517    
+
+(N356941)   -1.1759                   (N546641)    4.8006                       
+
+(N552660)   -4.8006                   (N640660)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_Vdd       -2.452E-02
+    V_Vss       -8.152E-02
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   8.48E-01  WATTS
+
+
+**** 11/20/24 23:11:45 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Analiza_Stabilitate"  [ C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\P1_2024_431D_Ciuhureanu_Andrei_A
+
+
+ ****     TEMPERATURE-ADJUSTED VALUES      TEMPERATURE =   40.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+ **** DIODE MODEL PARAMETERS
+
+                 X_U2.1N4148    X_U1.1N4148    X_U3.1N4148  
+
+         IS        1.185E-08      1.185E-08      1.185E-08  
+         VJ        8.514E-01      8.514E-01      8.514E-01  
+        CJO        7.053E-13      7.053E-13      7.053E-13  
+         RS        6.458E-01      6.458E-01      6.458E-01  
+        IKF        0.000E+00      0.000E+00      0.000E+00  
+         BV        1.100E+02      1.100E+02      1.100E+02  
+
+                 X_U4.1N4148   X_D1.model201  X_D2.model201 
+
+         IS        1.185E-08      4.572E-27      4.572E-27  
+         VJ        8.514E-01      9.881E-01      9.881E-01  
+        CJO        7.053E-13      0.000E+00      0.000E+00  
+         RS        6.458E-01      3.000E+00      3.000E+00  
+        IKF        0.000E+00      0.000E+00      0.000E+00  
+         BV        1.100E+02      5.000E+00      5.000E+00  
+
+
+ **** BJT MODEL PARAMETERS
+
+                   QBC846B        QBC856B                   
+
+         BF        3.244E+02      3.153E+02  
+        ISE        1.131E-15      2.454E-14  
+        VJE        7.355E-01      6.825E-01  
+        CJE        1.260E-11      1.152E-11  
+         RE        6.490E-01      6.630E-01  
+         RB        1.000E+01      1.000E+01  
+         BR        8.290E+00      8.680E+00  
+        ISC        2.947E-11      8.587E-14  
+        VJC        5.147E-01      4.613E-01  
+        CJC        3.429E-12      6.602E-12  
+         RC        7.014E-01      7.180E-01  
+        RBM        5.000E+00      5.000E-06  
+         IS        1.229E-13      1.358E-13  
+        ISS        0.000E+00      0.000E+00  
+        VJS        7.272E-01      7.272E-01  
+        CJS        0.000E+00      0.000E+00  
+      GAMMA        1.000E-11      1.000E-11  
+        RCO        0.000E+00      0.000E+00  
+         VO        1.000E+01      1.000E+01  
+
+
+**** 11/20/24 23:11:45 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Analiza_Stabilitate"  [ C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\P1_2024_431D_Ciuhureanu_Andrei_A
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   40.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VDD)    8.0000  (  VIN)    -.4564  (  VSS)   -8.0000  ( VOUT)   -4.5539      
+
+(N00223)    6.8179 (N00316)    7.2419 (N00500)   -1.0577 (N00580)   -7.3360     
+
+(N01272)   -4.0974 (N01385)   -6.7148 (N01577)   -7.3469 (N02160)    -.4566     
+
+(N02254)    -.4566 (N07242)   -7.3574 (N11121)    7.4399 (N14490)   -5.3206     
+
+(N15404)    7.8462 (N15428)    7.8459 (N16020)   -4.7090 (N55684)    3.1277     
+
+(N56498)   -3.1277 (N023821)   -3.4154                   (N054491)   -2.2769    
+
+(N356941)   -1.1385                   (N546641)    4.8498                       
+
+(N552660)   -4.8498                   (N640660)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_Vdd       -2.410E-02
+    V_Vss       -7.941E-02
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   8.28E-01  WATTS
+
+
+**** 11/20/24 23:11:45 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Analiza_Stabilitate"  [ C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\P1_2024_431D_Ciuhureanu_Andrei_A
+
+
+ ****     TEMPERATURE-ADJUSTED VALUES      TEMPERATURE =   70.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+ **** DIODE MODEL PARAMETERS
+
+                 X_U2.1N4148    X_U1.1N4148    X_U3.1N4148  
+
+         IS        9.028E-08      9.028E-08      9.028E-08  
+         VJ        8.098E-01      8.098E-01      8.098E-01  
+        CJO        7.066E-13      7.066E-13      7.066E-13  
+         RS        6.458E-01      6.458E-01      6.458E-01  
+        IKF        0.000E+00      0.000E+00      0.000E+00  
+         BV        1.100E+02      1.100E+02      1.100E+02  
+
+                 X_U4.1N4148   X_D1.model201  X_D2.model201 
+
+         IS        9.028E-08      3.167E-26      3.167E-26  
+         VJ        8.098E-01      9.596E-01      9.596E-01  
+        CJO        7.066E-13      0.000E+00      0.000E+00  
+         RS        6.458E-01      3.000E+00      3.000E+00  
+        IKF        0.000E+00      0.000E+00      0.000E+00  
+         BV        1.100E+02      5.000E+00      5.000E+00  
+
+
+ **** BJT MODEL PARAMETERS
+
+                   QBC846B        QBC856B                   
+
+         BF        3.244E+02      3.153E+02  
+        ISE        1.796E-14      3.541E-13  
+        VJE        6.828E-01      6.247E-01  
+        CJE        1.297E-11      1.193E-11  
+         RE        6.490E-01      6.630E-01  
+         RB        1.000E+01      1.000E+01  
+         BR        8.290E+00      8.680E+00  
+        ISC        2.648E-10      2.487E-12  
+        VJC        4.409E-01      3.824E-01  
+        CJC        3.622E-12      7.084E-12  
+         RC        7.014E-01      7.180E-01  
+        RBM        5.000E+00      5.000E-06  
+         IS        5.896E-12      6.517E-12  
+        ISS        0.000E+00      0.000E+00  
+        VJS        6.738E-01      6.738E-01  
+        CJS        0.000E+00      0.000E+00  
+      GAMMA        1.000E-11      1.000E-11  
+        RCO        0.000E+00      0.000E+00  
+         VO        1.000E+01      1.000E+01  
+
+
+**** 11/20/24 23:11:45 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Analiza_Stabilitate"  [ C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\P1_2024_431D_Ciuhureanu_Andrei_A
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   70.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VDD)    8.0000  (  VIN)    -.4220  (  VSS)   -8.0000  ( VOUT)   -4.2105      
+
+(N00223)    6.9119 (N00316)    7.3117 (N00500)    -.9648 (N00580)   -7.3836     
+
+(N01272)   -3.8234 (N01385)   -6.8191 (N01577)   -7.3953 (N02160)    -.4222     
+
+(N02254)    -.4222 (N07242)   -7.4096 (N11121)    7.4771 (N14490)   -4.9267     
+
+(N15404)    7.8572 (N15428)    7.8569 (N16020)   -4.3750 (N55684)    3.3024     
+
+(N56498)   -3.3024 (N023821)   -3.1579                   (N054491)   -2.1053    
+
+(N356941)   -1.0526                   (N546641)    4.9628                       
+
+(N552660)   -4.9628                   (N640660)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_Vdd       -2.314E-02
+    V_Vss       -7.455E-02
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   7.81E-01  WATTS
+
+
+**** 11/20/24 23:11:45 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Analiza_Stabilitate"  [ C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\P1_2024_431D_Ciuhureanu_Andrei_A
+
+
+ ****     TEMPERATURE-ADJUSTED VALUES      TEMPERATURE =  120.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+ **** DIODE MODEL PARAMETERS
+
+                 X_U2.1N4148    X_U1.1N4148    X_U3.1N4148  
+
+         IS        1.369E-06      1.369E-06      1.369E-06  
+         VJ        7.379E-01      7.379E-01      7.379E-01  
+        CJO        7.088E-13      7.088E-13      7.088E-13  
+         RS        6.458E-01      6.458E-01      6.458E-01  
+        IKF        0.000E+00      0.000E+00      0.000E+00  
+         BV        1.100E+02      1.100E+02      1.100E+02  
+
+                 X_U4.1N4148   X_D1.model201  X_D2.model201 
+
+         IS        1.369E-06      4.226E-25      4.226E-25  
+         VJ        7.379E-01      9.095E-01      9.095E-01  
+        CJO        7.088E-13      0.000E+00      0.000E+00  
+         RS        6.458E-01      3.000E+00      3.000E+00  
+        IKF        0.000E+00      0.000E+00      0.000E+00  
+         BV        1.100E+02      5.000E+00      5.000E+00  
+
+
+ **** BJT MODEL PARAMETERS
+
+                   QBC846B        QBC856B                   
+
+         BF        3.244E+02      3.153E+02  
+        ISE        7.276E-13      1.263E-11  
+        VJE        5.924E-01      5.259E-01  
+        CJE        1.360E-11      1.262E-11  
+         RE        6.490E-01      6.630E-01  
+         RB        1.000E+01      1.000E+01  
+         BR        8.290E+00      8.680E+00  
+        ISC        5.006E-09      2.252E-10  
+        VJC        3.153E-01      2.482E-01  
+        CJC        3.949E-12      7.903E-12  
+         RC        7.014E-01      7.180E-01  
+        RBM        5.000E+00      5.000E-06  
+         IS        1.050E-09      1.161E-09  
+        ISS        0.000E+00      0.000E+00  
+        VJS        5.821E-01      5.821E-01  
+        CJS        0.000E+00      0.000E+00  
+      GAMMA        1.000E-11      1.000E-11  
+        RCO        0.000E+00      0.000E+00  
+         VO        1.000E+01      1.000E+01  
+
+
+**** 11/20/24 23:11:45 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Analiza_Stabilitate"  [ C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\P1_2024_431D_Ciuhureanu_Andrei_A
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =  120.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VDD)    8.0000  (  VIN)    -.3645  (  VSS)   -8.0000  ( VOUT)   -3.6375      
+
+(N00223)    7.0725 (N00316)    7.4308 (N00500)    -.8071 (N00580)   -7.4624     
+
+(N01272)   -3.3700 (N01385)   -6.9953 (N01577)   -7.4753 (N02160)    -.3647     
+
+(N02254)    -.3647 (N07242)   -7.4976 (N11121)    7.5402 (N14490)   -4.2659     
+
+(N15404)    7.8755 (N15428)    7.8752 (N16020)   -3.8180 (N55684)    3.5912     
+
+(N56498)   -3.5912 (N023821)   -2.7281                   (N054491)   -1.8187    
+
+(N356941)    -.9094                   (N546641)    5.1495                       
+
+(N552660)   -5.1495                   (N640660)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_Vdd       -2.153E-02
+    V_Vss       -6.645E-02
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   7.04E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 11/20/24 23:11:45 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Analiza_Stabilitate"  [ C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\P1_2024_431D_Ciuhureanu_Andrei_A
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .53
+

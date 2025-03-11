@@ -1,0 +1,8 @@
+STATUS: PSpice Model Import Wizard for "Capture" (16.6.0.d001)
+STATUS:  
+   INFO: OLB driven flow
+   INFO: Input File: C:\USERS\ANDREI CIUHUREANU\DESKTOP\PROIECT 1(CEF 2)\PROIECTARE\SCHEMA_BLOC.DSN
+   INFO: Symbol Name: @SCHEMA_BLOC.SCHEMATIC1(sch_1):INS51381@LED.LED.Normal(chips)
+   INFO: Implementation type already exists on symbol "@SCHEMA_BLOC.SCHEMATIC1(sch_1):INS51381@LED.LED.Normal(chips)".
+   INFO: Implementation already exists on symbol "@SCHEMA_BLOC.SCHEMATIC1(sch_1):INS51381@LED.LED.Normal(chips)".
+STATUS: 0 Error messages, 0 Warning messages

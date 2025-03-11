@@ -1,0 +1,57 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    QUICKPLACE LOG                                                   )
+(                                                                     )
+(    Drawing          : SCHEMA_BLOC.brd                               )
+(    Software Version : 17.2S025                                      )
+(    Date/Time        : Sat Nov 23 22:40:18 2024                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+State: Placing on layer TOP
+
+         Placed symbol:  Q7 / QBC856B_0_TO236_QBC856B / TO236 at (3.5560 40.8382)
+         Placed symbol:  Q9 / QBC856B_0_TO236_QBC856B / TO236 at (8.6360 40.8382)
+         Placed symbol:  Q4 / QBC856B_0_TO236_QBC856B / TO236 at (13.7160 40.8382)
+         Placed symbol:  Q3 / QBC856B_0_TO236_QBC856B / TO236 at (18.7960 40.8382)
+         Placed symbol:  Q8 / QBC846B_0_TO236_QBC846B / TO236 at (23.8760 40.8382)
+         Placed symbol:  Q6 / QBC846B_0_TO236_QBC846B / TO236 at (28.9560 40.8382)
+         Placed symbol:  Q5 / QBC846B_0_TO236_QBC846B / TO236 at (34.0360 40.8382)
+         Placed symbol:  Q2 / QBC846B_0_TO236_QBC846B / TO236 at (3.5560 44.2418)
+         Placed symbol:  Q1 / QBC846B_0_TO236_QBC846B / TO236 at (8.6360 44.2418)
+         Placed symbol:  J2 / CON2_SMR2512_CON2 / SMR2512 at (11.8237 45.5880)
+         Placed symbol:  J1 / CON2_SMR2512_CON2 / SMR2512 at (20.9423 45.5880)
+         Placed symbol:  J4 / CON2_SMR2512_CON2 / SMR2512 at (30.0609 45.5880)
+         Placed symbol:  J3 / CON2_SMR2512_CON2 / SMR2512 at (1.6637 49.7536)
+         Placed symbol:  D2 / LED_SMD080512_5V,LED,LED / SMD080512 at (10.6299 49.1821)
+         Placed symbol:  D1 / LED_SMD080512_5V,LED,LED / SMD080512 at (15.2146 49.1821)
+         Placed symbol:  C2 / C_SMC0805_1U / SMC0805 at (19.5326 48.8011)
+         Placed symbol:  C1 / C_SMC0805_470P / SMC0805 at (23.9522 48.8011)
+         Placed symbol:  D6 / 1N4148_2_SMD0805_1N4148 / SMD0805 at (28.6385 49.1567)
+         Placed symbol:  D5 / 1N4148_2_SMD0805_1N4148 / SMD0805 at (33.2232 49.1567)
+         Placed symbol:  D4 / 1N4148_2_SMD0805_1N4148 / SMD0805 at (1.5113 53.3223)
+         Placed symbol:  D3 / 1N4148_2_SMD0805_1N4148 / SMD0805 at (6.0960 53.3223)
+         Placed symbol:  R1 / R_SMR0805_220K / SMR0805 at (10.4140 52.9667)
+         Placed symbol:  R10 / R_SMR0805_22 / SMR0805 at (14.8336 52.9667)
+         Placed symbol:  R11 / R_SMR0805_22 / SMR0805 at (19.2532 52.9667)
+         Placed symbol:  R12 / R_SMR0805_22 / SMR0805 at (23.6728 52.9667)
+         Placed symbol:  R13 / R_SMR0805_22 / SMR0805 at (28.0924 52.9667)
+         Placed symbol:  R14 / R_SMR0805_150 / SMR0805 at (32.5120 52.9667)
+         Placed symbol:  R15 / R_SMR0805_150 / SMR0805 at (1.2446 55.9385)
+         Placed symbol:  R16 / R_SMR0805_82 / SMR0805 at (5.6642 55.9385)
+         Placed symbol:  R17 / R_SMR0805_82 / SMR0805 at (10.0838 55.9385)
+         Placed symbol:  R2 / R_SMR0805_220 / SMR0805 at (14.5034 55.9385)
+         Placed symbol:  R3 / R_SMR0805_220 / SMR0805 at (18.9230 55.9385)
+         Placed symbol:  R4 / R_SMR0805_470 / SMR0805 at (23.3426 55.9385)
+         Placed symbol:  R5 / R_SMR0805_2.2K / SMR0805 at (27.7622 55.9385)
+         Placed symbol:  R6 / R_SMR0805_330 / SMR0805 at (32.1818 55.9385)
+         Placed symbol:  R7 / R_SMR0805_330 / SMR0805 at (36.6014 55.9385)
+         Placed symbol:  R8 / R_SMR0805_8.2K / SMR0805 at (1.2446 58.1991)
+         Placed symbol:  R9 / R_SMR0805_910 / SMR0805 at (5.6642 58.1991)
+
+
+Placed 38 of 38 applicable (38 total) symbols.
+
+-----------------------------------------------------------------------
+

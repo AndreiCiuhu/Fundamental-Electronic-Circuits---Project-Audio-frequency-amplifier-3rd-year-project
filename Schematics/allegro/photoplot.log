@@ -1,0 +1,302 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    ARTWORK LOG                                                      )
+(                                                                     )
+(    Drawing          : SCHEMA_BLOC.brd                               )
+(    Software Version : 17.2S025                                      )
+(    Date/Time        : Fri Dec 13 00:55:38 2024                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+ ---- Photoplot outline rectangle not found; using drawing extents.
+
+
+
+Results from parameter file ...
+    DEVICE-TYPE           GERBER_RS274X
+    OUTPUT-UNITS          INCHES
+    FILM-SIZE             2400000 1600000
+    FORMAT                2.5
+    ABORT-ON-ERROR        NO
+    SCALE                 1
+    SUPPRESS-LEAD-ZEROES  YES
+    SUPPRESS-TRAIL-ZEROES NO
+    SUPPRESS-EQUAL        YES
+    UNDEF-APT-CONT        NO
+
+ WARNING: Generating english output data from a metric database
+ may cause slight roundoff error of coordinates in output file.
+
+
+
+
+================================================================
+     PROCESSING FILM < TOP >
+     TO FILE < C:/Users/Andrei Ciuhureanu/Desktop/Proiect 1(CEF 2)/Etapa 2/Proiect/allegro/TOP.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.1000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.01600                                  DARK 
+  CIRCLE     0.01800                                  DARK 
+  CIRCLE     0.02600                                  DARK 
+  CIRCLE     0.03400                                  DARK 
+  CIRCLE     0.03937                                  DARK 
+  SQUARE     0.05000                     0.000 NO     DARK 
+  RECTANGLE  0.05000     x 0.03600       0.000 NO     DARK 
+  RECTANGLE  0.05000     x 0.03600      90.000 NO     DARK 
+  RECTANGLE  0.07600     x 0.04800       0.000 NO     DARK 
+  RECTANGLE  0.07600     x 0.04800      90.000 NO     DARK 
+  RECTANGLE  0.07600     x 0.12000       0.000 NO     DARK 
+  RECTANGLE  0.07600     x 0.12000      90.000 NO     DARK 
+
+     TOP created with warnings
+
+
+================================================================
+     PROCESSING FILM < BOTTOM >
+     TO FILE < C:/Users/Andrei Ciuhureanu/Desktop/Proiect 1(CEF 2)/Etapa 2/Proiect/allegro/BOTTOM.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.1000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.01600                                  DARK 
+  CIRCLE     0.01800                                  DARK 
+  CIRCLE     0.02600                                  DARK 
+  CIRCLE     0.03400                                  DARK 
+
+     BOTTOM created with warnings
+
+
+================================================================
+     PROCESSING FILM < SMBOT >
+     TO FILE < C:/Users/Andrei Ciuhureanu/Desktop/Proiect 1(CEF 2)/Etapa 2/Proiect/allegro/SMBOT.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.1000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.04400                                  DARK 
+
+     SMBOT created with warnings
+
+
+================================================================
+     PROCESSING FILM < SMTOP >
+     TO FILE < C:/Users/Andrei Ciuhureanu/Desktop/Proiect 1(CEF 2)/Etapa 2/Proiect/allegro/SMTOP.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.1000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.04400                                  DARK 
+  CIRCLE     0.07874                                  DARK 
+  SQUARE     0.06000                     0.000 NO     DARK 
+  RECTANGLE  0.06000     x 0.04600       0.000 NO     DARK 
+  RECTANGLE  0.06000     x 0.04600      90.000 NO     DARK 
+  RECTANGLE  0.08600     x 0.05800       0.000 NO     DARK 
+  RECTANGLE  0.08600     x 0.05800      90.000 NO     DARK 
+  RECTANGLE  0.08600     x 0.13000       0.000 NO     DARK 
+  RECTANGLE  0.08600     x 0.13000      90.000 NO     DARK 
+
+     SMTOP created with warnings
+
+
+================================================================
+     PROCESSING FILM < SPTOP >
+     TO FILE < C:/Users/Andrei Ciuhureanu/Desktop/Proiect 1(CEF 2)/Etapa 2/Proiect/allegro/SPTOP.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.1000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.03937                                  DARK 
+  SQUARE     0.04500                     0.000 NO     DARK 
+  RECTANGLE  0.04500     x 0.03240       0.000 NO     DARK 
+  RECTANGLE  0.04500     x 0.03240      90.000 NO     DARK 
+  RECTANGLE  0.06840     x 0.04320       0.000 NO     DARK 
+  RECTANGLE  0.06840     x 0.04320      90.000 NO     DARK 
+
+     SPTOP created with warnings
+
+
+================================================================
+     PROCESSING FILM < SSTOP >
+     TO FILE < C:/Users/Andrei Ciuhureanu/Desktop/Proiect 1(CEF 2)/Etapa 2/Proiect/allegro/SSTOP.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.1000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.00394                                  DARK 
+  CIRCLE     0.00591                                  DARK 
+  CIRCLE     0.00600                                  DARK 
+
+     SSTOP created with warnings
+
+
+================================================================
+     PROCESSING FILM < FAB >
+     TO FILE < C:/Users/Andrei Ciuhureanu/Desktop/Proiect 1(CEF 2)/Etapa 2/Proiect/allegro/FAB.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.1000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+    WARNING: text composed 0 width line found at (10.5933 -26.0275)
+           ... using undefined line width of 0.1000
+
+    WARNING: 0 width line found at (-0.8240 -27.6150)
+           ... using undefined line width of 0.1000
+
+    WARNING: Multiple 0 width lines; all will be treated the same as the first.
+           ... using undefined line width of 0.1000
+
+    WARNING: text having Multiple 0 width lines; all will be treated the same as the first.
+           ... using undefined line width of 0.1000
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.00394                                  DARK 
+
+     FAB created with warnings
+
+
+================================================================
+     PROCESSING FILM < BO >
+     TO FILE < C:/Users/Andrei Ciuhureanu/Desktop/Proiect 1(CEF 2)/Etapa 2/Proiect/allegro/BO.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.1000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.00394                                  DARK 
+
+     BO created with warnings
+
+
+------------------------------------------------------
+ SUMMARY:
+        TOP created with warnings
+        BOTTOM created with warnings
+        SMBOT created with warnings
+        SMTOP created with warnings
+        SPTOP created with warnings
+        SSTOP created with warnings
+        FAB created with warnings
+        BO created with warnings
+
+ ARTWORK had warnings

@@ -1,0 +1,242 @@
+
+**** 11/20/24 23:15:02 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-PSF"  [ C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\P1_2024_431D_Ciuhureanu_Andrei_AAF_N9_OrCAD\Sche
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "PSF.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/bc807-25.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/bc817-25.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/bc846b.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/bc856b.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/bzx84c2v7.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/bzx84c5v1.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/bzx84c5v6.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/bzx84c6v2.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/bzx84c6v8.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/bzx84c8v2.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/bzx84c10.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/irfr120npbf.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/mjd31cg.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/mjd32cg.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/mmbfj177lt1g.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/mmbfj309lt1g.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/1n4148.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Andrei Ciuhureanu\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source SCHEMA_BLOC
+V_V1         VIN 0  AC 540m
++SIN 0 540m 1k 0 0 0
+R_R1         0 VIN  220k TC=0,0 
+Q_Q1         N00223 VIN N00500 QBC846B 
+Q_Q3         N00223 N00316 N15428 QBC856B 
+Q_Q4         N00316 N00316 N15404 QBC856B 
+R_R2         N15428 VDD  220 TC=0,0 
+R_R3         N15404 VDD  220 TC=0,0 
+Q_Q2         N00316 N02160 N00500 QBC846B 
+Q_Q5         N00500 N01385 N00580 QBC846B 
+R_R4         VSS N00580  470 TC=0,0 
+R_R5         N01385 0  2.2k TC=0,0 
+Q_Q7         N01272 N00223 N11121 QBC856B 
+C_C1         N00223 N01272  470p  TC=0,0 
+R_R6         VSS N01577  330 TC=0,0 
+Q_Q6         N14490 N01385 N01577 QBC846B 
+R_R8         N02160 VOUT  8.2k TC=0,0 
+R_R9         0 N02160  910 TC=0,0 
+R_R10         N023821 VOUT  22 TC=0,0 
+R_R11         N054491 N023821  22 TC=0,0 
+X_U2         N07242 VSS 1N4148 
+X_U1         N01385 N07242 1N4148 
+R_R7         N11121 VDD  330 TC=0,0 
+C_C2         N11121 VDD  1u  TC=0,0 
+X_U3         N01272 N16020 1N4148 
+X_U4         N16020 N14490 1N4148 
+V_Vdd         VDD 0 8Vdc
+V_Vss         0 VSS 8Vdc
+R_R12         N356941 N054491  22 TC=0,0 
+R_R13         0 N356941  22 TC=0,0 
+Q_Q8         VDD N01272 VOUT QBC846B 
+Q_Q9         VSS N14490 VOUT QBC856B 
+R_R14         N546641 VDD  150 TC=0,0 
+X_D1         N55684 0 LED PARAMS: IS=1.7603e-027 RS=3  BV=5 IBV=5e-6         
+R_R15         VSS N552660  150 TC=0,0 
+X_D2         0 N56498 LED PARAMS: IS=1.7603e-027 RS=3  BV=5 IBV=5e-6         
+R_R16         N55684 N546641  82 TC=0,0 
+R_R17         N552660 N56498  82 TC=0,0 
+
+**** RESUMING PSF.cir ****
+.END
+
+**** 11/20/24 23:15:02 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-PSF"  [ C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\P1_2024_431D_Ciuhureanu_Andrei_AAF_N9_OrCAD\Sche
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2.1N4148     X_U1.1N4148     X_U3.1N4148     X_U4.1N4148     
+          IS    4.352000E-09    4.352000E-09    4.352000E-09    4.352000E-09 
+           N    1.906           1.906           1.906           1.906        
+          BV  110             110             110             110            
+         IBV  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+          RS     .6458           .6458           .6458           .6458       
+          TT    3.480000E-09    3.480000E-09    3.480000E-09    3.480000E-09 
+         CJO  704.800000E-15  704.800000E-15  704.800000E-15  704.800000E-15 
+          VJ     .869            .869            .869            .869        
+           M     .03             .03             .03             .03         
+
+
+               X_D1.model201   X_D2.model201   
+          IS    1.760300E-27    1.760300E-27 
+           N    2               2            
+          BV    5               5            
+         IBV    5.000000E-06    5.000000E-06 
+          RS    3               3            
+
+
+**** 11/20/24 23:15:02 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-PSF"  [ C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\P1_2024_431D_Ciuhureanu_Andrei_AAF_N9_OrCAD\Sche
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               QBC846B         QBC856B         
+               NPN             PNP             
+       LEVEL    1               1            
+          IS   18.220000E-15   20.140000E-15 
+          BF  324.4           315.3          
+          NF     .9932           .9974       
+         VAF   82              39.15         
+         IKF     .109            .079        
+         ISE  289.400000E-18    6.578000E-15 
+          NE    1.4             1.45         
+          BR    8.29            8.68         
+          NR     .9931           .9952       
+         VAR   17.9             9.5          
+         IKR     .09             .09         
+         ISC    9.982000E-12   16.330000E-15 
+          NC    1.763           1.15         
+         ISS    0               0            
+          RB   10              10            
+         RBM    5               5.000000E-06 
+         IRB    5.000000E-06    5.000000E-06 
+          RE     .649            .663        
+          RC     .7014           .718        
+         CJE   12.440000E-12   11.350000E-12 
+         VJE     .7579           .7071       
+         MJE     .3656           .3808       
+         CJC    3.347000E-12    6.395000E-12 
+         VJC     .5463           .4951       
+         MJC     .391            .44         
+        XCJC     .6193           .6288       
+         CJS    0               0            
+         VJS     .75             .75         
+         MJS     .333            .333        
+          FC     .979            .9059       
+          TF  490.800000E-12  654.600000E-12 
+         XTF    9.51            5.387        
+         VTF    2.927           6.245        
+         ITF     .3131           .2108       
+          TR   90.000000E-09   55.000000E-09 
+          KF    0               0            
+          AF    1               1            
+          CN    2.42            2.2          
+           D     .87             .52         
+
+
+**** 11/20/24 23:15:02 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-PSF"  [ C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\P1_2024_431D_Ciuhureanu_Andrei_AAF_N9_OrCAD\Sche
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VDD)    8.0000  (  VIN)    0.0000  (  VSS)   -8.0000  ( VOUT)     .0149      
+
+(N00223)    6.6706 (N00316)    7.2122 (N00500)    -.6265 (N00580)   -7.3151     
+
+(N01272)     .6621 (N01385)   -6.6700 (N01577)   -7.3244 (N02160)-262.4E-06     
+
+(N07242)   -7.3350 (N11121)    7.3242 (N14490)    -.6278 (N15404)    7.8415     
+
+(N15428)    7.8412 (N16020)     .0171 (N55684)    3.0516 (N56498)   -3.0516     
+
+(N023821)     .0112                   (N054491)     .0075                       
+
+(N356941)     .0037                   (N546641)    4.8006                       
+
+(N552660)   -4.8006                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -2.161E-06
+    V_Vdd       -2.641E-02
+    V_Vss       -2.927E-02
+
+    TOTAL POWER DISSIPATION   4.45E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 11/20/24 23:15:02 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-PSF"  [ C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\P1_2024_431D_Ciuhureanu_Andrei_AAF_N9_OrCAD\Sche
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .03
+

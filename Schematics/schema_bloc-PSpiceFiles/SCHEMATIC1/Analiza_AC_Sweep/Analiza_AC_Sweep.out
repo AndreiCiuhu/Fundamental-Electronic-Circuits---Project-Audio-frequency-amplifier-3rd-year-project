@@ -1,0 +1,818 @@
+
+**** 11/20/24 22:58:01 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Analiza_AC_Sweep"  [ C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\P1_2024_431D_Ciuhureanu_Andrei_AAF_
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Analiza_AC_Sweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/bc807-25.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/bc817-25.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/bc846b.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/bc856b.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/bzx84c2v7.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/bzx84c5v1.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/bzx84c5v6.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/bzx84c6v2.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/bzx84c6v8.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/bzx84c8v2.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/bzx84c10.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/irfr120npbf.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/mjd31cg.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/mjd32cg.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/mmbfj177lt1g.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/mmbfj309lt1g.lib" 
+.LIB "c:/users/andrei ciuhureanu/desktop/lib_modelepspice_anexa_1/modele_a1_lib/1n4148.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Andrei Ciuhureanu\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.AC DEC 10 10 10MEG
+.TEMP -20 0 27 40 70 120
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source SCHEMA_BLOC
+V_V1         VIN 0  AC 540m
++SIN 0 540m 1k 0 0 0
+R_R1         0 VIN  220k TC=0,0 
+Q_Q1         N00223 VIN N00500 QBC846B 
+Q_Q3         N00223 N00316 N15428 QBC856B 
+Q_Q4         N00316 N00316 N15404 QBC856B 
+R_R2         N15428 VDD  220 TC=0,0 
+R_R3         N15404 VDD  220 TC=0,0 
+Q_Q2         N00316 N02160 N00500 QBC846B 
+Q_Q5         N00500 N01385 N00580 QBC846B 
+R_R4         VSS N00580  470 TC=0,0 
+R_R5         N01385 0  2.2k TC=0,0 
+Q_Q7         N01272 N00223 N11121 QBC856B 
+C_C1         N00223 N01272  470p  TC=0,0 
+R_R6         VSS N01577  330 TC=0,0 
+Q_Q6         N14490 N01385 N01577 QBC846B 
+R_R8         N02160 VOUT  8.2k TC=0,0 
+R_R9         0 N02160  910 TC=0,0 
+R_R10         N023821 VOUT  22 TC=0,0 
+R_R11         N054491 N023821  22 TC=0,0 
+X_U2         N07242 VSS 1N4148 
+X_U1         N01385 N07242 1N4148 
+R_R7         N11121 VDD  330 TC=0,0 
+C_C2         N11121 VDD  1u  TC=0,0 
+X_U3         N01272 N16020 1N4148 
+X_U4         N16020 N14490 1N4148 
+V_Vdd         VDD 0 8Vdc
+V_Vss         0 VSS 8Vdc
+R_R12         N356941 N054491  22 TC=0,0 
+R_R13         0 N356941  22 TC=0,0 
+Q_Q8         VDD N01272 VOUT QBC846B 
+Q_Q9         VSS N14490 VOUT QBC856B 
+R_R14         N546641 VDD  150 TC=0,0 
+X_D1         N55684 0 LED PARAMS: IS=1.7603e-027 RS=3  BV=5 IBV=5e-6         
+R_R15         VSS N552660  150 TC=0,0 
+X_D2         0 N56498 LED PARAMS: IS=1.7603e-027 RS=3  BV=5 IBV=5e-6         
+R_R16         N55684 N546641  82 TC=0,0 
+R_R17         N552660 N56498  82 TC=0,0 
+
+**** RESUMING Analiza_AC_Sweep.cir ****
+.END
+
+**** 11/20/24 22:58:01 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Analiza_AC_Sweep"  [ C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\P1_2024_431D_Ciuhureanu_Andrei_AAF_
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2.1N4148     X_U1.1N4148     X_U3.1N4148     X_U4.1N4148     
+          IS    4.352000E-09    4.352000E-09    4.352000E-09    4.352000E-09 
+           N    1.906           1.906           1.906           1.906        
+          BV  110             110             110             110            
+         IBV  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+          RS     .6458           .6458           .6458           .6458       
+          TT    3.480000E-09    3.480000E-09    3.480000E-09    3.480000E-09 
+         CJO  704.800000E-15  704.800000E-15  704.800000E-15  704.800000E-15 
+          VJ     .869            .869            .869            .869        
+           M     .03             .03             .03             .03         
+
+
+               X_D1.model201   X_D2.model201   
+          IS    1.760300E-27    1.760300E-27 
+           N    2               2            
+          BV    5               5            
+         IBV    5.000000E-06    5.000000E-06 
+          RS    3               3            
+
+
+**** 11/20/24 22:58:01 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Analiza_AC_Sweep"  [ C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\P1_2024_431D_Ciuhureanu_Andrei_AAF_
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               QBC846B         QBC856B         
+               NPN             PNP             
+       LEVEL    1               1            
+          IS   18.220000E-15   20.140000E-15 
+          BF  324.4           315.3          
+          NF     .9932           .9974       
+         VAF   82              39.15         
+         IKF     .109            .079        
+         ISE  289.400000E-18    6.578000E-15 
+          NE    1.4             1.45         
+          BR    8.29            8.68         
+          NR     .9931           .9952       
+         VAR   17.9             9.5          
+         IKR     .09             .09         
+         ISC    9.982000E-12   16.330000E-15 
+          NC    1.763           1.15         
+         ISS    0               0            
+          RB   10              10            
+         RBM    5               5.000000E-06 
+         IRB    5.000000E-06    5.000000E-06 
+          RE     .649            .663        
+          RC     .7014           .718        
+         CJE   12.440000E-12   11.350000E-12 
+         VJE     .7579           .7071       
+         MJE     .3656           .3808       
+         CJC    3.347000E-12    6.395000E-12 
+         VJC     .5463           .4951       
+         MJC     .391            .44         
+        XCJC     .6193           .6288       
+         CJS    0               0            
+         VJS     .75             .75         
+         MJS     .333            .333        
+          FC     .979            .9059       
+          TF  490.800000E-12  654.600000E-12 
+         XTF    9.51            5.387        
+         VTF    2.927           6.245        
+         ITF     .3131           .2108       
+          TR   90.000000E-09   55.000000E-09 
+          KF    0               0            
+          AF    1               1            
+          CN    2.42            2.2          
+           D     .87             .52         
+
+
+**** 11/20/24 22:58:01 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Analiza_AC_Sweep"  [ C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\P1_2024_431D_Ciuhureanu_Andrei_AAF_
+
+
+ ****     TEMPERATURE-ADJUSTED VALUES      TEMPERATURE =  -20.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+ **** DIODE MODEL PARAMETERS
+
+                 X_U2.1N4148    X_U1.1N4148    X_U3.1N4148  
+
+         IS        5.090E-11      5.090E-11      5.090E-11  
+         VJ        9.305E-01      9.305E-01      9.305E-01  
+        CJO        7.029E-13      7.029E-13      7.029E-13  
+         RS        6.458E-01      6.458E-01      6.458E-01  
+        IKF        0.000E+00      0.000E+00      0.000E+00  
+         BV        1.100E+02      1.100E+02      1.100E+02  
+
+                 X_U4.1N4148   X_D1.model201  X_D2.model201 
+
+         IS        5.090E-11      2.538E-29      2.538E-29  
+         VJ        9.305E-01      1.041E+00      1.041E+00  
+        CJO        7.029E-13      0.000E+00      0.000E+00  
+         RS        6.458E-01      3.000E+00      3.000E+00  
+        IKF        0.000E+00      0.000E+00      0.000E+00  
+         BV        1.100E+02      5.000E+00      5.000E+00  
+
+
+ **** BJT MODEL PARAMETERS
+
+                   QBC846B        QBC856B                   
+
+         BF        3.244E+02      3.153E+02  
+        ISE        6.781E-19      1.899E-17  
+        VJE        8.368E-01      7.940E-01  
+        CJE        1.188E-11      1.074E-11  
+         RE        6.490E-01      6.630E-01  
+         RB        1.000E+01      1.000E+01  
+         BR        8.290E+00      8.680E+00  
+        ISC        8.139E-14      1.026E-17  
+        VJC        6.584E-01      6.152E-01  
+        CJC        3.054E-12      5.660E-12  
+         RC        7.014E-01      7.180E-01  
+        RBM        5.000E+00      5.000E-06  
+         IS        3.787E-18      4.186E-18  
+        ISS        0.000E+00      0.000E+00  
+        VJS        8.302E-01      8.302E-01  
+        CJS        0.000E+00      0.000E+00  
+      GAMMA        1.000E-11      1.000E-11  
+        RCO        0.000E+00      0.000E+00  
+         VO        1.000E+01      1.000E+01  
+
+
+**** 11/20/24 22:58:01 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Analiza_AC_Sweep"  [ C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\P1_2024_431D_Ciuhureanu_Andrei_AAF_
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =  -20.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VDD)    8.0000  (  VIN)    0.0000  (  VSS)   -8.0000  ( VOUT)     .0172      
+
+(N00223)    6.5093 (N00316)    7.1064 (N00500)    -.7146 (N00580)   -7.2404     
+
+(N01272)     .7523 (N01385)   -6.5099 (N01577)   -7.2484 (N02160)-233.8E-06     
+
+(N07242)   -7.2549 (N11121)    7.2482 (N14490)    -.7151 (N15404)    7.8242     
+
+(N15428)    7.8239 (N16020)     .0186 (N55684)    2.7747 (N56498)   -2.7747     
+
+(N023821)     .0129                   (N054491)     .0086                       
+
+(N356941)     .0043                   (N546641)    4.6216                       
+
+(N552660)   -4.6216                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -2.413E-06
+    V_Vdd       -2.838E-02
+    V_Vss       -3.115E-02
+
+    TOTAL POWER DISSIPATION   4.76E-01  WATTS
+
+
+**** 11/20/24 22:58:01 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Analiza_AC_Sweep"  [ C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\P1_2024_431D_Ciuhureanu_Andrei_AAF_
+
+
+ ****     TEMPERATURE-ADJUSTED VALUES      TEMPERATURE =    0.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+ **** DIODE MODEL PARAMETERS
+
+                 X_U2.1N4148    X_U1.1N4148    X_U3.1N4148  
+
+         IS        4.052E-10      4.052E-10      4.052E-10  
+         VJ        9.048E-01      9.048E-01      9.048E-01  
+        CJO        7.037E-13      7.037E-13      7.037E-13  
+         RS        6.458E-01      6.458E-01      6.458E-01  
+        IKF        0.000E+00      0.000E+00      0.000E+00  
+         BV        1.100E+02      1.100E+02      1.100E+02  
+
+                 X_U4.1N4148   X_D1.model201  X_D2.model201 
+
+         IS        4.052E-10      1.832E-28      1.832E-28  
+         VJ        9.048E-01      1.024E+00      1.024E+00  
+        CJO        7.037E-13      0.000E+00      0.000E+00  
+         RS        6.458E-01      3.000E+00      3.000E+00  
+        IKF        0.000E+00      0.000E+00      0.000E+00  
+         BV        1.100E+02      5.000E+00      5.000E+00  
+
+
+ **** BJT MODEL PARAMETERS
+
+                   QBC846B        QBC856B                   
+
+         BF        3.244E+02      3.153E+02  
+        ISE        1.142E-17      2.903E-16  
+        VJE        8.037E-01      7.574E-01  
+        CJE        1.212E-11      1.100E-11  
+         RE        6.490E-01      6.630E-01  
+         RB        1.000E+01      1.000E+01  
+         BR        8.290E+00      8.680E+00  
+        ISC        7.666E-13      3.193E-16  
+        VJC        6.111E-01      5.645E-01  
+        CJC        3.178E-12      5.970E-12  
+         RC        7.014E-01      7.180E-01  
+        RBM        5.000E+00      5.000E-06  
+         IS        1.974E-16      2.182E-16  
+        ISS        0.000E+00      0.000E+00  
+        VJS        7.965E-01      7.965E-01  
+        CJS        0.000E+00      0.000E+00  
+      GAMMA        1.000E-11      1.000E-11  
+        RCO        0.000E+00      0.000E+00  
+         VO        1.000E+01      1.000E+01  
+
+
+**** 11/20/24 22:58:01 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Analiza_AC_Sweep"  [ C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\P1_2024_431D_Ciuhureanu_Andrei_AAF_
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =    0.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VDD)    8.0000  (  VIN)    0.0000  (  VSS)   -8.0000  ( VOUT)     .0162      
+
+(N00223)    6.5775 (N00316)    7.1510 (N00500)    -.6775 (N00580)   -7.2722     
+
+(N01272)     .7144 (N01385)   -6.5776 (N01577)   -7.2807 (N02160)-246.6E-06     
+
+(N07242)   -7.2888 (N11121)    7.2805 (N14490)    -.6785 (N15404)    7.8316     
+
+(N15428)    7.8313 (N16020)     .0179 (N55684)    2.8929 (N56498)   -2.8929     
+
+(N023821)     .0122                   (N054491)     .0081                       
+
+(N356941)     .0041                   (N546641)    4.6980                       
+
+(N552660)   -4.6980                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -2.305E-06
+    V_Vdd       -2.753E-02
+    V_Vss       -3.034E-02
+
+    TOTAL POWER DISSIPATION   4.63E-01  WATTS
+
+
+**** 11/20/24 22:58:01 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Analiza_AC_Sweep"  [ C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\P1_2024_431D_Ciuhureanu_Andrei_AAF_
+
+
+ ****     TEMPERATURE-ADJUSTED VALUES      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+ **** DIODE MODEL PARAMETERS
+
+                 X_U2.1N4148    X_U1.1N4148    X_U3.1N4148  
+
+         IS        4.352E-09      4.352E-09      4.352E-09  
+         VJ        8.690E-01      8.690E-01      8.690E-01  
+        CJO        7.048E-13      7.048E-13      7.048E-13  
+         RS        6.458E-01      6.458E-01      6.458E-01  
+        IKF        0.000E+00      0.000E+00      0.000E+00  
+         BV        1.100E+02      1.100E+02      1.100E+02  
+
+                 X_U4.1N4148   X_D1.model201  X_D2.model201 
+
+         IS        4.352E-09      1.760E-27      1.760E-27  
+         VJ        8.690E-01      1.000E+00      1.000E+00  
+        CJO        7.048E-13      0.000E+00      0.000E+00  
+         RS        6.458E-01      3.000E+00      3.000E+00  
+        IKF        0.000E+00      0.000E+00      0.000E+00  
+         BV        1.100E+02      5.000E+00      5.000E+00  
+
+
+ **** BJT MODEL PARAMETERS
+
+                   QBC846B        QBC856B                   
+
+         BF        3.244E+02      3.153E+02  
+        ISE        2.894E-16      6.578E-15  
+        VJE        7.579E-01      7.071E-01  
+        CJE        1.244E-11      1.135E-11  
+         RE        6.490E-01      6.630E-01  
+         RB        1.000E+01      1.000E+01  
+         BR        8.290E+00      8.680E+00  
+        ISC        9.982E-12      1.633E-14  
+        VJC        5.463E-01      4.951E-01  
+        CJC        3.347E-12      6.395E-12  
+         RC        7.014E-01      7.180E-01  
+        RBM        5.000E+00      5.000E-06  
+         IS        1.822E-14      2.014E-14  
+        ISS        0.000E+00      0.000E+00  
+        VJS        7.500E-01      7.500E-01  
+        CJS        0.000E+00      0.000E+00  
+      GAMMA        1.000E-11      1.000E-11  
+        RCO        0.000E+00      0.000E+00  
+         VO        1.000E+01      1.000E+01  
+
+
+**** 11/20/24 22:58:01 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Analiza_AC_Sweep"  [ C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\P1_2024_431D_Ciuhureanu_Andrei_AAF_
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VDD)    8.0000  (  VIN)    0.0000  (  VSS)   -8.0000  ( VOUT)     .0149      
+
+(N00223)    6.6706 (N00316)    7.2122 (N00500)    -.6265 (N00580)   -7.3151     
+
+(N01272)     .6621 (N01385)   -6.6700 (N01577)   -7.3244 (N02160)-262.4E-06     
+
+(N07242)   -7.3350 (N11121)    7.3242 (N14490)    -.6278 (N15404)    7.8415     
+
+(N15428)    7.8412 (N16020)     .0171 (N55684)    3.0516 (N56498)   -3.0516     
+
+(N023821)     .0112                   (N054491)     .0075                       
+
+(N356941)     .0037                   (N546641)    4.8006                       
+
+(N552660)   -4.8006                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -2.161E-06
+    V_Vdd       -2.641E-02
+    V_Vss       -2.927E-02
+
+    TOTAL POWER DISSIPATION   4.45E-01  WATTS
+
+
+**** 11/20/24 22:58:01 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Analiza_AC_Sweep"  [ C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\P1_2024_431D_Ciuhureanu_Andrei_AAF_
+
+
+ ****     TEMPERATURE-ADJUSTED VALUES      TEMPERATURE =   40.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+ **** DIODE MODEL PARAMETERS
+
+                 X_U2.1N4148    X_U1.1N4148    X_U3.1N4148  
+
+         IS        1.185E-08      1.185E-08      1.185E-08  
+         VJ        8.514E-01      8.514E-01      8.514E-01  
+        CJO        7.053E-13      7.053E-13      7.053E-13  
+         RS        6.458E-01      6.458E-01      6.458E-01  
+        IKF        0.000E+00      0.000E+00      0.000E+00  
+         BV        1.100E+02      1.100E+02      1.100E+02  
+
+                 X_U4.1N4148   X_D1.model201  X_D2.model201 
+
+         IS        1.185E-08      4.572E-27      4.572E-27  
+         VJ        8.514E-01      9.881E-01      9.881E-01  
+        CJO        7.053E-13      0.000E+00      0.000E+00  
+         RS        6.458E-01      3.000E+00      3.000E+00  
+        IKF        0.000E+00      0.000E+00      0.000E+00  
+         BV        1.100E+02      5.000E+00      5.000E+00  
+
+
+ **** BJT MODEL PARAMETERS
+
+                   QBC846B        QBC856B                   
+
+         BF        3.244E+02      3.153E+02  
+        ISE        1.131E-15      2.454E-14  
+        VJE        7.355E-01      6.825E-01  
+        CJE        1.260E-11      1.152E-11  
+         RE        6.490E-01      6.630E-01  
+         RB        1.000E+01      1.000E+01  
+         BR        8.290E+00      8.680E+00  
+        ISC        2.947E-11      8.587E-14  
+        VJC        5.147E-01      4.613E-01  
+        CJC        3.429E-12      6.602E-12  
+         RC        7.014E-01      7.180E-01  
+        RBM        5.000E+00      5.000E-06  
+         IS        1.229E-13      1.358E-13  
+        ISS        0.000E+00      0.000E+00  
+        VJS        7.272E-01      7.272E-01  
+        CJS        0.000E+00      0.000E+00  
+      GAMMA        1.000E-11      1.000E-11  
+        RCO        0.000E+00      0.000E+00  
+         VO        1.000E+01      1.000E+01  
+
+
+**** 11/20/24 22:58:01 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Analiza_AC_Sweep"  [ C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\P1_2024_431D_Ciuhureanu_Andrei_AAF_
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   40.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VDD)    8.0000  (  VIN)    0.0000  (  VSS)   -8.0000  ( VOUT)     .0143      
+
+(N00223)    6.7157 (N00316)    7.2421 (N00500)    -.6015 (N00580)   -7.3358     
+
+(N01272)     .6364 (N01385)   -6.7148 (N01577)   -7.3454 (N02160)-269.4E-06     
+
+(N07242)   -7.3574 (N11121)    7.3452 (N14490)    -.6029 (N15404)    7.8463     
+
+(N15428)    7.8460 (N16020)     .0168 (N55684)    3.1277 (N56498)   -3.1277     
+
+(N023821)     .0107                   (N054491)     .0071                       
+
+(N356941)     .0036                   (N546641)    4.8498                       
+
+(N552660)   -4.8498                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -2.091E-06
+    V_Vdd       -2.587E-02
+    V_Vss       -2.876E-02
+
+    TOTAL POWER DISSIPATION   4.37E-01  WATTS
+
+
+**** 11/20/24 22:58:01 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Analiza_AC_Sweep"  [ C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\P1_2024_431D_Ciuhureanu_Andrei_AAF_
+
+
+ ****     TEMPERATURE-ADJUSTED VALUES      TEMPERATURE =   70.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+ **** DIODE MODEL PARAMETERS
+
+                 X_U2.1N4148    X_U1.1N4148    X_U3.1N4148  
+
+         IS        9.028E-08      9.028E-08      9.028E-08  
+         VJ        8.098E-01      8.098E-01      8.098E-01  
+        CJO        7.066E-13      7.066E-13      7.066E-13  
+         RS        6.458E-01      6.458E-01      6.458E-01  
+        IKF        0.000E+00      0.000E+00      0.000E+00  
+         BV        1.100E+02      1.100E+02      1.100E+02  
+
+                 X_U4.1N4148   X_D1.model201  X_D2.model201 
+
+         IS        9.028E-08      3.167E-26      3.167E-26  
+         VJ        8.098E-01      9.596E-01      9.596E-01  
+        CJO        7.066E-13      0.000E+00      0.000E+00  
+         RS        6.458E-01      3.000E+00      3.000E+00  
+        IKF        0.000E+00      0.000E+00      0.000E+00  
+         BV        1.100E+02      5.000E+00      5.000E+00  
+
+
+ **** BJT MODEL PARAMETERS
+
+                   QBC846B        QBC856B                   
+
+         BF        3.244E+02      3.153E+02  
+        ISE        1.796E-14      3.541E-13  
+        VJE        6.828E-01      6.247E-01  
+        CJE        1.297E-11      1.193E-11  
+         RE        6.490E-01      6.630E-01  
+         RB        1.000E+01      1.000E+01  
+         BR        8.290E+00      8.680E+00  
+        ISC        2.648E-10      2.487E-12  
+        VJC        4.409E-01      3.824E-01  
+        CJC        3.622E-12      7.084E-12  
+         RC        7.014E-01      7.180E-01  
+        RBM        5.000E+00      5.000E-06  
+         IS        5.896E-12      6.517E-12  
+        ISS        0.000E+00      0.000E+00  
+        VJS        6.738E-01      6.738E-01  
+        CJS        0.000E+00      0.000E+00  
+      GAMMA        1.000E-11      1.000E-11  
+        RCO        0.000E+00      0.000E+00  
+         VO        1.000E+01      1.000E+01  
+
+
+**** 11/20/24 22:58:01 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Analiza_AC_Sweep"  [ C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\P1_2024_431D_Ciuhureanu_Andrei_AAF_
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   70.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VDD)    8.0000  (  VIN)    0.0000  (  VSS)   -8.0000  ( VOUT)     .0129      
+
+(N00223)    6.8208 (N00316)    7.3119 (N00500)    -.5431 (N00580)   -7.3834     
+
+(N01272)     .5760 (N01385)   -6.8191 (N01577)   -7.3938 (N02160)-283.9E-06     
+
+(N07242)   -7.4096 (N11121)    7.3937 (N14490)    -.5441 (N15404)    7.8573     
+
+(N15428)    7.8570 (N16020)     .0160 (N55684)    3.3024 (N56498)   -3.3024     
+
+(N023821)     .0096                   (N054491)     .0064                       
+
+(N356941)     .0032                   (N546641)    4.9628                       
+
+(N552660)   -4.9628                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.932E-06
+    V_Vdd       -2.466E-02
+    V_Vss       -2.761E-02
+
+    TOTAL POWER DISSIPATION   4.18E-01  WATTS
+
+
+**** 11/20/24 22:58:01 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Analiza_AC_Sweep"  [ C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\P1_2024_431D_Ciuhureanu_Andrei_AAF_
+
+
+ ****     TEMPERATURE-ADJUSTED VALUES      TEMPERATURE =  120.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+ **** DIODE MODEL PARAMETERS
+
+                 X_U2.1N4148    X_U1.1N4148    X_U3.1N4148  
+
+         IS        1.369E-06      1.369E-06      1.369E-06  
+         VJ        7.379E-01      7.379E-01      7.379E-01  
+        CJO        7.088E-13      7.088E-13      7.088E-13  
+         RS        6.458E-01      6.458E-01      6.458E-01  
+        IKF        0.000E+00      0.000E+00      0.000E+00  
+         BV        1.100E+02      1.100E+02      1.100E+02  
+
+                 X_U4.1N4148   X_D1.model201  X_D2.model201 
+
+         IS        1.369E-06      4.226E-25      4.226E-25  
+         VJ        7.379E-01      9.095E-01      9.095E-01  
+        CJO        7.088E-13      0.000E+00      0.000E+00  
+         RS        6.458E-01      3.000E+00      3.000E+00  
+        IKF        0.000E+00      0.000E+00      0.000E+00  
+         BV        1.100E+02      5.000E+00      5.000E+00  
+
+
+ **** BJT MODEL PARAMETERS
+
+                   QBC846B        QBC856B                   
+
+         BF        3.244E+02      3.153E+02  
+        ISE        7.276E-13      1.263E-11  
+        VJE        5.924E-01      5.259E-01  
+        CJE        1.360E-11      1.262E-11  
+         RE        6.490E-01      6.630E-01  
+         RB        1.000E+01      1.000E+01  
+         BR        8.290E+00      8.680E+00  
+        ISC        5.006E-09      2.252E-10  
+        VJC        3.153E-01      2.482E-01  
+        CJC        3.949E-12      7.903E-12  
+         RC        7.014E-01      7.180E-01  
+        RBM        5.000E+00      5.000E-06  
+         IS        1.050E-09      1.161E-09  
+        ISS        0.000E+00      0.000E+00  
+        VJS        5.821E-01      5.821E-01  
+        CJS        0.000E+00      0.000E+00  
+      GAMMA        1.000E-11      1.000E-11  
+        RCO        0.000E+00      0.000E+00  
+         VO        1.000E+01      1.000E+01  
+
+
+**** 11/20/24 22:58:01 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Analiza_AC_Sweep"  [ C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\P1_2024_431D_Ciuhureanu_Andrei_AAF_
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =  120.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VDD)    8.0000  (  VIN)    0.0000  (  VSS)   -8.0000  ( VOUT)     .0105      
+
+(N00223)    6.9983 (N00316)    7.4309 (N00500)    -.4429 (N00580)   -7.4622     
+
+(N01272)     .4714 (N01385)   -6.9953 (N01577)   -7.4739 (N02160)-302.8E-06     
+
+(N07242)   -7.4976 (N11121)    7.4737 (N14490)    -.4420 (N15404)    7.8756     
+
+(N15428)    7.8753 (N16020)     .0147 (N55684)    3.5912 (N56498)   -3.5912     
+
+(N023821)     .0079                   (N054491)     .0053                       
+
+(N356941)     .0026                   (N546641)    5.1495                       
+
+(N552660)   -5.1495                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.667E-06
+    V_Vdd       -2.270E-02
+    V_Vss       -2.576E-02
+
+    TOTAL POWER DISSIPATION   3.88E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 11/20/24 22:58:01 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Analiza_AC_Sweep"  [ C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\P1_2024_431D_Ciuhureanu_Andrei_AAF_
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .19
+

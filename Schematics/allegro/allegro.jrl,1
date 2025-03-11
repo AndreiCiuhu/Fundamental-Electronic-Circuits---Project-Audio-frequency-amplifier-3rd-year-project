@@ -1,0 +1,18 @@
+\t (00:00:03) allegro 17.2 S025 Windows SPB 64-bit Edition
+\t (00:00:03)     Journal start - Sat Dec 14 18:15:31 2024
+\t (00:00:03)         Host=DESKTOP-9H9U52P User=Andrei Ciuhureanu Pid=23132 CPUs=16
+\t (00:00:03) CmdLine= D:\OrCAD\tools\bin\allegro.exe
+\t (00:00:03) 
+   (00:00:03) Loading axlcore.cxt 
+\t (00:00:03) Opening existing design...
+\d (00:00:05) Design opened: C:/Users/Andrei Ciuhureanu/Desktop/Proiect 1(CEF 2)/Etapa 2/Proiect/allegro/SCHEMA_BLOC.brd
+\i (00:00:05) trapsize 4885
+\i (00:00:05) trapsize 4997
+\i (00:00:05) trapsize 4997
+\i (00:00:05) generaledit 
+\i (00:00:07) open 
+\i (00:00:26) fillin "C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\Etapa 2\FOLDER_PREDARE\Layout\SCHEMA_BLOC.brd"
+\i (00:00:26) cd "C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\Etapa 2\FOLDER_PREDARE\Layout"
+\t (00:00:26) Opening existing design...
+\i (00:00:26) trapsize 4997
+\t (00:00:26)     Journal end - Sat Dec 14 18:15:55 2024

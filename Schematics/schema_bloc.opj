@@ -1,0 +1,357 @@
+(ExpressProject "schema_bloc"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File
+         "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\bc807-25.lib"
+        (Type "Schematic Library"))
+      (File
+         "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\bc817-25.lib"
+        (Type "Schematic Library"))
+      (File
+         "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\bc846b.lib"
+        (Type "Schematic Library"))
+      (File
+         "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\bc856b.lib"
+        (Type "Schematic Library"))
+      (File
+         "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\bzx84c2v7.lib"
+        (Type "Schematic Library"))
+      (File
+         "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\bzx84c5v1.lib"
+        (Type "Schematic Library"))
+      (File
+         "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\bzx84c5v6.lib"
+        (Type "Schematic Library"))
+      (File
+         "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\bzx84c6v2.lib"
+        (Type "Schematic Library"))
+      (File
+         "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\bzx84c6v8.lib"
+        (Type "Schematic Library"))
+      (File
+         "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\bzx84c8v2.lib"
+        (Type "Schematic Library"))
+      (File
+         "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\bzx84c10.lib"
+        (Type "Schematic Library"))
+      (File
+         "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\irfr120npbf.lib"
+        (Type "Schematic Library"))
+      (File
+         "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\mjd31cg.lib"
+        (Type "Schematic Library"))
+      (File
+         "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\mjd32cg.lib"
+        (Type "Schematic Library"))
+      (File
+         "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\mmbfj177lt1g.lib"
+        (Type "Schematic Library"))
+      (File
+         "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\mmbfj309lt1g.lib"
+        (Type "Schematic Library"))
+      (File
+         "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\1n4148.lib"
+        (Type "Schematic Library"))
+      (File "c:\users\andrei ciuhureanu\downloads\evalaa.lib"
+        (Type "Schematic Library")))
+    (NoModify)
+    (File ".\schema_bloc.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (DRC_Scope "0")
+    (DRC_Action "0")
+    (DRC_Create_Warnings "FALSE")
+    (DRC_View_Output "FALSE")
+    (DRC_Preserved_Waived "FALSE")
+    (DRC_Run_Electrical_Rules "TRUE")
+    (DRC_Run_Physical_Rules "TRUE")
+    (DRC_Report_File
+       "C:\USERS\ANDREI CIUHUREANU\DESKTOP\PROIECT 1(CEF 2)\ETAPA 2\PROIECT\SCHEMA_BLOC.DRC")
+    (DRC_Check_Ports "FALSE")
+    (DRC_Check_Off-Page_Connectors "FALSE")
+    (DRC_Report_Ports_and_Off-page_Connectors "FALSE")
+    (DRC_SDT_Compatibility "FALSE")
+    (DRC_Report_Off-grid_Objects "FALSE")
+    (DRC_Check_Unconnected_Nets "TRUE")
+    (DRC_Check_for_Misleading_TAP "FALSE")
+    (DRC_Report_Netnames "FALSE")
+    (DRC_Check_Single_Node_Nets "TRUE")
+    (DRC_Run_Electrical_Custom_DRC "FALSE")
+    (DRC_Check_No_Driving_Source "TRUE")
+    (DRC_Check_Duplicate_NetNames "TRUE")
+    (DRC_Check_Floating_Pins "TRUE")
+    (DRC_Check_Physical_Power_Pins_Visibility "TRUE")
+    (DRC_Check_PCB_Footprint_Property "TRUE")
+    (DRC_Check_Normal_Convert_View_Sync "TRUE")
+    (DRC_Check_Incorrect_PinGroup_Assignment "TRUE")
+    (DRC_Check_High_Speed_Props_Syntax "TRUE")
+    (DRC_Check_Missing_Pin_Numbers "TRUE")
+    (DRC_Check_Device_With_No_Pins "TRUE")
+    (DRC_Check_Power_Ground_Short "TRUE")
+    (DRC_Identical_References "TRUE")
+    (DRC_Type_Mismatch "TRUE")
+    (DRC_Visible_Power_pins "FALSE")
+    (DRC_Report_Unused_Part_Packages "TRUE")
+    (DRC_Check_Name_Prop_For_HierBlocks "TRUE")
+    (DRC_Run_Physical_Custom_DRC "FALSE")
+    (Netlist_TAB "0")
+    ("Create Allegro Netlist" "TRUE")
+    ("Allegro Netlist Directory" "allegro")
+    ("View Allegro Netlist Files" "TRUE")
+    ("Allegro Netlist Create DCF File" "FALSE")
+    ("Update Allegro Board" "TRUE")
+    ("Allegro Netlist Input Board File"
+       "C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\Etapa 2\Proiect\allegro\SCHEMA_BLOC.brd")
+    ("Allegro Netlist Output Board File" "allegro\SCHEMA_BLOC.brd")
+    ("Allegro Netlist Remove Etch" "TRUE")
+    ("Allegro Netlist Place Changed Component" "ALWAYS_REPLACE")
+    ("Allegro Netlist Open Board in Allegro" "ORCAD")
+    ("Allegro Setup Backup Versions" "3")
+    ("Allegro Setup Ignore Constraints" "FALSE")
+    ("Allegro Setup Part Type Length" "31")
+    ("Allegro Netlist Combine Property String" "PCB Footprint")
+    ("Allegro Netlist Ignore Fixed Property" "FALSE")
+    ("Allegro Netlist User Defined Property" "FALSE")
+    (BOM_Scope "0")
+    (BOM_Mode "0")
+    (BOM_Report_File
+       "C:\Users\Andrei Ciuhureanu\Desktop\Proiect 1(CEF 2)\Etapa 2\P1_2024_431D_Ciuhureanu_Andrei_AAF_N9_OrCAD\Schematics\SCHEMA_BLOC.BOM")
+    (BOM_Merge_Include "FALSE")
+    (BOM_Property_Combine_7.0 "{Item}\t{Quantity}\t{Reference}\t{Value}")
+    (BOM_Header "Item\tQuantity\tReference\tPart")
+    (BOM_Include_File
+       "C:\USERS\ANDREI CIUHUREANU\DESKTOP\PROIECT 1(CEF 2)\ETAPA 2\PROIECT\SCHEMA_BLOC.INC")
+    (BOM_Include_File_Combine_7.0 "{Item}\t{Quantity}\t{Reference}\t{Value}")
+    (BOM_One_Part_Per_Line "FALSE")
+    (Open_BOM_in_Excel "FALSE")
+    (BOM_View_Output "TRUE"))
+  (Folder "Outputs"
+    (File ".\schema_bloc-pspicefiles\schematic1\schematic1.net"
+      (Type "Report"))
+    (File ".\allegro\pstxnet.dat"
+      (Type "Report")
+      (DisplayName "pstxnet.dat"))
+    (File ".\allegro\pstxprt.dat"
+      (Type "Report")
+      (DisplayName "pstxprt.dat"))
+    (File ".\allegro\pstchip.dat"
+      (Type "Report")
+      (DisplayName "pstchip.dat"))
+    (File ".\schema_bloc.drc"
+      (Type "Report"))
+    (File ".\schema_bloc.bom"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\schema_bloc-pspicefiles\schematic1\analiza_dc.sim"
+        (DisplayName "SCHEMATIC1-Analiza_DC")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\schema_bloc-pspicefiles\schematic1\analiza_transient.sim"
+        (DisplayName "SCHEMATIC1-Analiza_Transient")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\schema_bloc-pspicefiles\schematic1\analiza_ac_sweep.sim"
+        (DisplayName "SCHEMATIC1-Analiza_AC_Sweep")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\schema_bloc-pspicefiles\schematic1\analiza_stabilitate.sim"
+        (DisplayName "SCHEMATIC1-Analiza_Stabilitate")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\schema_bloc-pspicefiles\schematic1\psf.sim"
+        (DisplayName "SCHEMATIC1-PSF")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\schema_bloc-pspicefiles\schematic1\analiza_ri.sim"
+        (DisplayName "SCHEMATIC1-Analiza_RI")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\schema_bloc-pspicefiles\schematic1\analiza_ro.sim"
+        (DisplayName "SCHEMATIC1-Analiza_RO")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\schema_bloc-pspicefiles\schematic1\psf.sim"))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File
+         "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\bc807-25.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName
+           "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\bc807-25.lib"))
+      (File
+         "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\bc817-25.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName
+           "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\bc817-25.lib"))
+      (File
+         "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\bc846b.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName
+           "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\bc846b.lib"))
+      (File
+         "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\bc856b.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName
+           "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\bc856b.lib"))
+      (File
+         "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\bzx84c2v7.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName
+           "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\bzx84c2v7.lib"))
+      (File
+         "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\bzx84c5v1.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName
+           "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\bzx84c5v1.lib"))
+      (File
+         "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\bzx84c5v6.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName
+           "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\bzx84c5v6.lib"))
+      (File
+         "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\bzx84c6v2.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName
+           "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\bzx84c6v2.lib"))
+      (File
+         "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\bzx84c6v8.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName
+           "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\bzx84c6v8.lib"))
+      (File
+         "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\bzx84c8v2.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName
+           "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\bzx84c8v2.lib"))
+      (File
+         "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\bzx84c10.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName
+           "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\bzx84c10.lib"))
+      (File
+         "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\irfr120npbf.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName
+           "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\irfr120npbf.lib"))
+      (File
+         "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\mjd31cg.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName
+           "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\mjd31cg.lib"))
+      (File
+         "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\mjd32cg.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName
+           "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\mjd32cg.lib"))
+      (File
+         "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\mmbfj177lt1g.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName
+           "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\mmbfj177lt1g.lib"))
+      (File
+         "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\mmbfj309lt1g.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName
+           "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\mmbfj309lt1g.lib"))
+      (File
+         "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\1n4148.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName
+           "c:\users\andrei ciuhureanu\desktop\lib_modelepspice_anexa_1\modele_a1_lib\1n4148.lib"))
+      (File "c:\users\andrei ciuhureanu\downloads\evalaa.lib"
+        (Type "Schematic Library"))))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (MPSSessionName "Andrei Ciuhureanu")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Outputs")
+      (Select "Design Resources"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 1201 0 586"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 104 1740 104 555")
+        (Scroll "-309 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\ANDREI CIUHUREANU\DESKTOP\PROIECT 1(CEF 2)\ETAPA 2\P1_2024_431D_CIUHUREANU_ANDREI_AAF_N9_ORCAD\SCHEMATICS\SCHEMA_BLOC.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
+  (PartMRUSelector
+    (1N4148
+      (FullPartName "1N4148.Normal")
+      (LibraryName "C:\USERS\ANDREI CIUHUREANU\DOWNLOADS\EVALAA.OLB")
+      (DeviceIndex "0"))
+    (CON2
+      (FullPartName "CON2.Normal")
+      (LibraryName "D:\ORCAD\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (GND
+      (LibraryName "D:\ORCAD\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (L
+      (FullPartName "L.Normal")
+      (LibraryName "D:\ORCAD\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "D:\ORCAD\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (LED
+      (FullPartName "LED.Normal")
+      (LibraryName
+         "D:\ORCAD\TOOLS\CAPTURE\TCLSCRIPTS\CAPPSPICEMODELAPP\LED\HYBRID\SUPPORTFILES\LED.OLB")
+      (DeviceIndex "0"))
+    (QBC807-25
+      (FullPartName "QBC807-25.Normal")
+      (LibraryName
+         "C:\USERS\ANDREI CIUHUREANU\DESKTOP\LIB_MODELEPSPICE_ANEXA_1\MODELE_A1_LIB\BC807-25.OLB")
+      (DeviceIndex "0"))
+    (QBC817-25
+      (FullPartName "QBC817-25.Normal")
+      (LibraryName
+         "C:\USERS\ANDREI CIUHUREANU\DESKTOP\LIB_MODELEPSPICE_ANEXA_1\MODELE_A1_LIB\BC817-25.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName "D:\ORCAD\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName "D:\ORCAD\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (QBC856B
+      (FullPartName "QBC856B.Normal")
+      (LibraryName
+         "C:\USERS\ANDREI CIUHUREANU\DESKTOP\LIB_MODELEPSPICE_ANEXA_1\MODELE_A1_LIB\BC856B.OLB")
+      (DeviceIndex "0"))
+    (QBC846B
+      (FullPartName "QBC846B.Normal")
+      (LibraryName
+         "C:\USERS\ANDREI CIUHUREANU\DESKTOP\LIB_MODELEPSPICE_ANEXA_1\MODELE_A1_LIB\BC846B.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName "D:\ORCAD\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VSIN
+      (FullPartName "VSIN.Normal")
+      (LibraryName "D:\ORCAD\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory "C:\Users\Andrei Ciuhureanu\Downloads")
+  (ISPCBBASICLICENSE "false"))

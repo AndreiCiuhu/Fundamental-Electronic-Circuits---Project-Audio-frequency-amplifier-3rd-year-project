@@ -1,0 +1,80 @@
+Fri Dec 06 01:03:58 2024				Page     1
+
+
+ 
+Update Symbols/Modules Logfile
+	Fri Dec 06 01:03:58 2024
+
+------ Module Refresh Messages ------
+
+SUMMARY:    Updated 0 out of 0 modules
+
+------ End Module Messages     ------
+
+
+
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Refresh Symbol                                                   )
+(                                                                     )
+(    Drawing          : SCHEMA_BLOC.brd                               )
+(    Software Version : 17.2S025                                      )
+(    Date/Time        : Fri Dec 06 01:03:58 2024                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Fri Dec 06 01:03:58 2024				Page     1
+
+
+------ Symbol Refresh Directives ------
+
+Input design  = 'C:/Users/Andrei Ciuhureanu/Desktop/Proiect 1(CEF 2)/Etapa 2/Proiect/allegro/SCHEMA_BLOC.brd'
+Output design = ''
+
+Update mechanical symbols              = 'NO'
+Update format symbols                  = 'NO'
+Update package symbols                 = 'NO'
+Update shape/flash symbols             = 'NO'
+Update symbol padstacks                = 'YES'
+Preserve padstacks replaced on pins    = 'YES'
+Reset symbol text and size locations   = 'NO'
+Reset Pin Escapes (fanouts)            = 'NO'
+Ripup Etch                             = 'NO'
+Reset custom drill data                = 'NO'
+Symbol list file                       = 'C:/Users/ANDREI~1/AppData/Local/Temp/#Taaaaab09668.tmp'
+
+
+------ Library Paths ------
+PSMPATH =  . 
+           symbols 
+           .. 
+           ../symbols 
+           D:/OrCAD/share/local/pcb/symbols 
+           D:/OrCAD/share/pcb/pcb_lib/symbols 
+           D:/OrCAD/share/pcb/allegrolib/symbols 
+
+PADPATH =  . 
+           symbols 
+           .. 
+           ../symbols 
+           D:/OrCAD/share/local/pcb/padstacks 
+           D:/OrCAD/share/pcb/pcb_lib/symbols 
+           D:/OrCAD/share/pcb/allegrolib/symbols 
+
+
+------ Symbol Refresh Messages ------
+
+'TO236'  symbol refreshed successfully.
+
+
+------ Pad Stack Refresh Messages ------
+
+'SMD36_49'  pad stack refreshed successfully.
+
+
+----- Symbol Update Summary ----
+
+Updated symbols: 1 out 1
+    Design updated.
+
