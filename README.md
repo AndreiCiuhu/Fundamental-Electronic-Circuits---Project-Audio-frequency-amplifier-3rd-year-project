@@ -1,11 +1,11 @@
 # Proiect Amplificator de Joasă Frecvență
 
 ## Descriere
-Proiectul constă în proiectarea și realizarea practică a unui amplificator de tensiune de joasă frecvență, destinat amplificării unui semnal audio în condiții specifice definite prin parametri tehnici preciși (rezistențe de intrare și ieșire, amplificare în tensiune, sarcină, temperatură de operare).
+Proiectul constă în proiectarea și realizarea practică a unui amplificator de tensiune de joasă frecvență, destinat amplificării unui semnal audio în condiții specifice definite prin parametri tehnici preciși (rezistențe de sarcină, de intrare și ieșire, amplificare în tensiune, temperatură de operare).
 
 ## Date de proiectare
 - Semnal de intrare: 540 mV
-- Rezistența sarcină ieșire (RL): 90 Ω
+- Sarcina la ieșire (RL): 90 Ω
 - Rezistență intrare (Ri): >150 kΩ
 - Rezistență ieșire (Ro): <0,9 Ω
 - Amplificare în tensiune (Av): 10
@@ -40,11 +40,11 @@ Proiectul amplificatorului respectă cerințele impuse și oferă o bază solid�
 # Low Frequency Amplifier Project
 
 ## Description
-This project involves the design and practical realization of a low-frequency voltage amplifier, intended for amplifying audio signals under specific technical parameters (input/output resistance, voltage gain, load, and operating temperature).
+This project involves the design and practical realization of a low-frequency voltage amplifier, intended for amplifying audio signals under specific technical parameters (load/input/output resistance, voltage gain, and operating temperature).
 
 ## Design Specifications
 - Input signal: 540 mV
-- Output load resistance (RL): 90 Ω
+- Output load (RL): 90 Ω
 - Input resistance (Ri): >150 kΩ
 - Output resistance (Ro): <0.9 Ω
 - Voltage gain (Av): 10
