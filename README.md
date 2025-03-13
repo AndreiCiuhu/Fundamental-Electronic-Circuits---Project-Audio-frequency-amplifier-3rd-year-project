@@ -25,12 +25,12 @@ Proiectul constă în proiectarea și realizarea practică a unui amplificator d
 ## Schema electrică
 Schema electrică detaliază conexiunile și componentele utilizate, ilustrând clar fiecare etaj al amplificatorului și rețeaua de reacție negativă.
 
-![Schema Electrică](https://imgur.com/a/P7nyuHa)
+![Schema Electrică](https://imgur.com/a/P7nyuHa.jpg)
 
 ## Layout PCB
 Layout-ul PCB a fost proiectat cu trasee dimensionate corespunzător pentru curenții vehiculați, urmând schema electrică pentru o amplasare logică și eficientă a componentelor.
 
-![Layout PCB](https://imgur.com/a/DoUTD58)
+![Layout PCB](https://imgur.com/a/DoUTD58.jpg)
 
 ## Concluzie
 Proiectul amplificatorului respectă cerințele impuse și oferă o bază solidă pentru analiza și îmbunătățirea performanțelor în etape viitoare, incluzând testări suplimentare și depanări în funcție de rezultatele experimentale.
@@ -64,12 +64,12 @@ This project involves the design and practical realization of a low-frequency vo
 ## Electrical Schematic
 The electrical schematic details the connections and components clearly illustrating each amplifier stage and the negative feedback network.
 
-![Electrical Schematic](https://imgur.com/a/P7nyuHa)
+![Electrical Schematic](https://imgur.com/a/P7nyuHa.jpg)
 
 ## PCB Layout
 The PCB layout was designed with appropriate track widths based on current requirements, following the schematic for logical and efficient component placement.
 
-![PCB Layout](https://imgur.com/a/DoUTD58)
+![PCB Layout](https://imgur.com/a/DoUTD58.jpg)
 
 ## Conclusion
 The amplifier project meets the specified requirements and provides a robust foundation for future performance analysis and enhancements, including further testing and troubleshooting based on experimental results.
