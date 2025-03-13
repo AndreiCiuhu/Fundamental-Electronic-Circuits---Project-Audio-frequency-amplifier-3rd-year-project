@@ -1,7 +1,7 @@
 # Proiect Amplificator de Joasă Frecvență
 
 ## Descriere
-Proiectul constă în proiectarea și realizarea practică a unui amplificator de tensiune de joasă frecvență, destinat amplificării unui semnal audio în condiții specifice definite prin parametri tehnici preciși (rezistențe de intrare și ieșire, amplificare în tensiune, încărcare, temperatură de operare).
+Proiectul constă în proiectarea și realizarea practică a unui amplificator de tensiune de joasă frecvență, destinat amplificării unui semnal audio în condiții specifice definite prin parametri tehnici preciși (rezistențe de intrare și ieșire, amplificare în tensiune, sarcină, temperatură de operare).
 
 ## Date de proiectare
 - Semnal de intrare: 540 mV
